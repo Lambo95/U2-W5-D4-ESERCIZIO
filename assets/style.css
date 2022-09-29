@@ -1,0 +1,79 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+#nav-bar ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#format-menu {
+  width: 20%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.img-card {
+  height: 20vh;
+  background: url(https://picsum.photos/200/300);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: -webkit-fill-available;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+.un {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
