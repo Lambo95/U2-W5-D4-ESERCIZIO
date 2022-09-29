@@ -1,11 +1,12 @@
-function selectText() {
-  let textSelected = document.querySelector(".text-card");
+let textSelected;
+
+function selectText(event) {
+  textSelected = event.target;
   textSelected.classList.toggle("selected");
   console.log(textSelected);
 }
 
 function textBold() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("bold")) {
       textSelected.classList.add("bold");
@@ -18,7 +19,6 @@ function textBold() {
 }
 
 function textEm() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("em")) {
       textSelected.classList.add("em");
@@ -31,7 +31,6 @@ function textEm() {
 }
 
 function textUn() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("un")) {
       textSelected.classList.add("un");
@@ -44,7 +43,6 @@ function textUn() {
 }
 
 function textUpper() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("upper")) {
       textSelected.classList.add("upper");
@@ -57,7 +55,6 @@ function textUpper() {
 }
 
 function textLeft() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("align-left")) {
       textSelected.classList.add("align-left");
@@ -70,7 +67,6 @@ function textLeft() {
 }
 
 function textRight() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("align-right")) {
       textSelected.classList.add("align-right");
@@ -83,7 +79,6 @@ function textRight() {
 }
 
 function textCenter() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("center")) {
       textSelected.classList.add("center");
@@ -96,7 +91,6 @@ function textCenter() {
 }
 
 function textJustify() {
-  let textSelected = document.querySelector(".text-card");
   if (textSelected.classList.contains("selected")) {
     if (!textSelected.classList.contains("justify")) {
       textSelected.classList.add("justify");
